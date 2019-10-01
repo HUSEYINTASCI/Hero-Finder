@@ -1,0 +1,15 @@
+body{background-image: url(./h.jpg);background-size: cover;}
+span{
+
+  margin: 14px 1px 0 403px;
+  color: black;
+  font-size: xx-large;
+  font-family: serif;
+  border: 2px solid;
+  position: absolute;
+  z-index: 10;
+}
+
+#main{background-color: aquamarine;color: azure;width: 929px;height: 437px;position: absolute;margin: -15px 0 0 307px;}
+
+#panel{background-color: cornflowerblue;color: azure;width: 797px;height: 383px;position: absolute;margin: 34px 0 0 71px;}
