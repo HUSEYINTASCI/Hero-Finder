@@ -1,4 +1,4 @@
-body{background-image: url(./h.jpg);background-size: cover;}
+body{background-image: url(./h.jpg);}
 span{
 
   margin: 14px 1px 0 403px;
@@ -9,7 +9,19 @@ span{
   position: absolute;
   z-index: 10;
 }
+#survey{
 
-#main{background-color: aquamarine;color: azure;width: 929px;height: 437px;position: absolute;margin: -15px 0 0 307px;}
+
+}
+#sbtn{
+
+  position: absolute;
+    margin: 357px 0 0 323px;
+    width: 185px;
+    height: 46px;
+    font-size: 34px;
+    background-color: initial;
+}
+#main{background-color: aquamarine;color: azure;width: 929px;height: 437px;position: absolute;opacity: 0.6;margin: -15px 0 0 307px;}
 
 #panel{background-color: cornflowerblue;color: azure;width: 797px;height: 383px;position: absolute;margin: 34px 0 0 71px;}
