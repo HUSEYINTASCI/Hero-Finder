@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <title>Hero Finder Survey</title>
+</head>
+<body>
+        <div id="survey">
+            <h1>Survey Questions</h1>
+    
+            <h2 id="about"> <b>About you</b></h2>
+            <form action="/api/heroes" method="POST">
+                Name:<br>
+                <input id="Name" type="text" name="Name" required>
+                <br>
+                Description:<br>
+                <input type="text" name="description" required>
+                <br><br>
+    
+                Pic_link: <br>
+                <input id="link" type="text" name="link" required>
+                <br><br>
+    
+                <% for (var i = 0; i < res.length; i++){%>
+                <h2>Question <%= i + 1%>:</h2>
+                <h3> <i><%= res[i].question%></i></h3>
+                <select name="question<%=i+1%>" placeholder="Choose an option" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                <br><br><br><br>
+                <% } %>
+                <button id="fn">Find</button>
+            </form>
+    
+        </div>
+
+         
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+     var sum;
+     $(document).on("click",function(){
+
+          sum= parseInt($('select[name="question1"]').val()) +parseInt($('select[name="question2"]').val()) +parseInt($('select[name="question3"]').val() +parseInt($('select[name="question4"]').val()) +parseInt($('select[name="question5"]').val()) +parseInt($('select[name="question6"]').val()) +parseInt($('select[name="question7"]').val()) +parseInt($('select[name="question8"]').val()) +parseInt($('select[name="question9"]').val()) +parseInt($('select[name="question10"]').val()) +parseInt($('select[name="question11"]').val()) +parseInt($('select[name="question12"]').val()) +parseInt($('select[name="question13"]').val()) +parseInt($('select[name="question14"]').val()) +parseInt($('select[name="question15"]').val()) +parseInt($('select[name="question16"]').val()) +parseInt($('select[name="question17"]').val()) +parseInt($('select[name="question18"]').val()) +parseInt($('select[name="question19"]').val()) +parseInt($('select[name="question20"]').val()) );
+            console.log(sum);
+ 
+     });
+
+ </script>
+</html>
