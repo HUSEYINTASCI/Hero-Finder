@@ -19,8 +19,15 @@ CREATE TABLE heroes (
     PRIMARY KEY (h_id)
 );
 
-CREATE TABLE score (
+CREATE TABLE scores (
+    id INT NOT NULL AUTO_INCREMENT,
+    q_id INT NOT NULL,
     h_id INT NOT NULL,
-    score INT NOT NULL,
-    FOREIGN KEY (h_id) REFERENCES heroes(h_id)
+    answer INT NOT NULL,
+    FOREIGN KEY (q_id) REFERENCES questions(q_id),
+    FOREIGN KEY (h_id) REFERENCES heroes(h_id),
+    PRIMARY KEY (id),
+    CHECK (answer >= 0),
+    CHECK (answer <= 20)
 );
+ 

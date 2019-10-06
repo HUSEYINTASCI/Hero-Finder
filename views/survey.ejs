@@ -13,8 +13,8 @@
     
             <h2 id="about"> <b>About you</b></h2>
             <form action="/api/heroes" method="POST">
-                Name:<br>
-                <input id="Name" type="text" name="Name" required>
+                name:<br>
+                <input id="name" type="text" name="hname" required>
                 <br>
                 Description:<br>
                 <input type="text" name="description" required>
@@ -46,7 +46,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script>
      var sum;
-     $(document).on("click",function(){
+     $(document).on("click","fn",function(){
 
           sum= parseInt($('select[name="question1"]').val()) +parseInt($('select[name="question2"]').val()) +parseInt($('select[name="question3"]').val() +parseInt($('select[name="question4"]').val()) +parseInt($('select[name="question5"]').val()) +parseInt($('select[name="question6"]').val()) +parseInt($('select[name="question7"]').val()) +parseInt($('select[name="question8"]').val()) +parseInt($('select[name="question9"]').val()) +parseInt($('select[name="question10"]').val()) +parseInt($('select[name="question11"]').val()) +parseInt($('select[name="question12"]').val()) +parseInt($('select[name="question13"]').val()) +parseInt($('select[name="question14"]').val()) +parseInt($('select[name="question15"]').val()) +parseInt($('select[name="question16"]').val()) +parseInt($('select[name="question17"]').val()) +parseInt($('select[name="question18"]').val()) +parseInt($('select[name="question19"]').val()) +parseInt($('select[name="question20"]').val()) );
             console.log(sum);

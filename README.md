@@ -23,3 +23,7 @@ Heroes API
 
 ![alt text](https://github.com/HUSEYINTASCI/Hero-Finder/blob/master/public/3.png)
 
+Result
+
+![alt text](https://github.com/HUSEYINTASCI/Hero-Finder/blob/master/public/result.PNG)
+
